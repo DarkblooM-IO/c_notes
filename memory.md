@@ -23,6 +23,8 @@ printf("%p\n", &c);
 
 ## Pointers
 
+> `int *pX = &x;`: *integer pointer named pX is set to the address of x*
+
 A pointer is a "variable-like" reference that holds a memory address to another variable, array, etc.
 
 **Advantages of using pointers**:
