@@ -35,8 +35,7 @@ A constant is a fixed value that cannot be altered by the program during its exe
 Example:
 
 ```c
-const float PI = 3.14159; // common convention is to right constant names in full
-						  // uppercase
+const float PI = 3.14159; // common convention is to right constant names in full uppercase
 ```
 
 ## Swapping values
@@ -62,16 +61,14 @@ printf("%c\n", b); // -> A
 Things get a little different when working with strings:
 
 ```c
-char a[15] = "water"; // we specify a length to avoid unexpected behavior when swapping
-					  // values 
+char a[15] = "water"; // we specify a length to avoid unexpected behavior when swapping values 
 char b[15] = "lemonade";
 char temp[15];
 
 printf("%s\n", a);    // -> water
 printf("%s\n", b);    // -> lemonade
 
-strcpy(temp, x);      // make sure to include the <string.h> library to use this
-					  // function
+strcpy(temp, x);      // make sure to include the <string.h> library to use this function
 strcpy(x, y);
 strcpy(y, temp);
 
@@ -86,8 +83,8 @@ printf("%s\n", b);    // -> water
 Example:
 
 ```c
-typedef char user[25];        // define a "nickname" called user that represents a char
-							  // type variable with a length of 25 bytes
+typedef char user[25];        	  // define a "nickname" called user that represents a char type variable with a length of
+				  // 25 bytes
 
 int main() {
 	user user1 = "DarkblooM"; // same as: char user1[25] = "DarkblooM";
@@ -103,14 +100,14 @@ typedef struct {
 	char name[25];
 	char password[16];
 	int id;
-} User; // set the struct name at the end of the typedef
+} User;				        // set the struct name at the end of the typedef
 
 int main() {
 	User user1 = {"DarkblooM", "password123", 69420};
 
-	printf("%s\n", user1.name); // -> DarkblooM
+	printf("%s\n", user1.name);     // -> DarkblooM
 	printf("%s\n", user1.password); // -> password123
-	printf("%d\n", user1.id); // -> 69420
+	printf("%d\n", user1.id);       // -> 69420
 
 	return 0;
 }
