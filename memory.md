@@ -16,7 +16,7 @@ printf("%d bytes\n", sizeof(b)); // -> 1 bytes
 printf("%d bytes\n", sizeof(c)); // -> 1 bytes
 
 // use %p and & to display a memory address
-printf("%p\n", &a); // -> (memory addresses are never the same)
+printf("%p\n", &a);              // -> (memory addresses are never the same)
 printf("%p\n", &b);
 printf("%p\n", &c);
 ```
@@ -37,8 +37,8 @@ Example:
 ```c
 int age = 20;
 int *pAge = &age;      // pointers are initialized using this naming convention:
-				       // [var type] *p[Name] = &[name];
-				       // the * signifies that we are storing a variable's address
+		       // [var type] *p[Name] = &[name];
+		       // the * signifies that we are storing a variable's address
 
 printf("%p\n", &age);  // memory address
 printf("%d\n", age);   // -> 20
@@ -50,7 +50,7 @@ printf("%d\n", *pAge); // -> 20
 Pointers can be passed as arguments to functions:
 
 ```c
-void printAge(int *pAge) { // take note of the *
+void printAge(int *pAge) {                       // take note of the *
 	printf("You are %d years old\n", *pAge); // dereference
 }
 
@@ -58,7 +58,7 @@ int main() {
 	int age = 20;
 	int *pAge = &age;
 
-	printAge(pAge); // -> You are 20 years old
+	printAge(pAge);                          // -> You are 20 years old
 
 	return 0;
 }
