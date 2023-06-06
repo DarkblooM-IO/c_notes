@@ -111,8 +111,8 @@ A two-dimensional array is an array in which each value is itself an array.
 Example:
 
 ```c
-int n[2][3] = {{1, 2, 3}, {4, 5, 6}}; // we specify an array of arrays with [x][y] (y being mandatory this time and defining the
-				      // size of each sub-arrays)
+int n[2][3] = {{1, 2, 3}, {4, 5, 6}}; // we specify an array of arrays with [x][y] (y being mandatory this time and defining
+				      // the size of each sub-arrays)
 
 // an easier way to visualize a 2D array is declaring it like this:
 int n[2][3] = {
