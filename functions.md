@@ -5,8 +5,7 @@
 Example:
 
 ```c
-void birthday() { // void is the data type of the return value, since we don't have a
-				  // return value here, we use a void
+void birthday() { // void is the data type of the return value, since we don't have a return value here, we use a void
 	printf("Happy birthday to you!\n");
 	printf("Happy birthday to you!\n");
 	printf("Happy birthday dear you!\n");
@@ -15,9 +14,9 @@ void birthday() { // void is the data type of the return value, since we don't h
 
 int main() {
 	birthday(); // -> Happy birthday to you!
-				//    Happy birthday to you!
-				//    Happy birthday dear you!
-				//    Happy birthday to you!
+		    //    Happy birthday to you!
+		    //    Happy birthday dear you!
+		    //    Happy birthday to you!
 	return 0;
 }
 ```
@@ -29,8 +28,7 @@ Functions can take in variables called **arguments** to be used inside of itself
 Example:
 
 ```c
-void birthday(char s[], int x) { // the birthday function takes in two arguments:
-								 // s (of type char) and x (of type int)
+void birthday(char s[], int x) { // the birthday function takes in two arguments: s (of type char) and x (of type int)
 	printf("Happy birthday, dear %s!\n", s);
 	printf("You are %d years old!\n", n);
 }
@@ -39,7 +37,7 @@ int main() {
 	char name[] = "DarkblooM";
 	int age = 21;
 	birthday(name, age); // -> Happy birthday, dear DarkblooM!
-						 //    You are 21 years old! 
+			     //    You are 21 years old! 
 	return 0;
 }
 ```
@@ -53,8 +51,7 @@ Example:
 ```c
 double square(double x) { // this function expects to return a double
 	double result = x * x;
-	return result; // returning a double as expacted by the function type indicated
-				   // earlier
+	return result; // returning a double as expected by the function type indicated earlier
 }
 
 int main() {
@@ -94,7 +91,7 @@ int main() {
 	char name[] = "DarkblooM";
 	int age = 20;
 	hello(name, age); // -> Hello DarkblooM
-					  //    You are 20 years old
+			  //    You are 20 years old
 	return 0;
 }
 
