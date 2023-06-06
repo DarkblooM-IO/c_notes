@@ -93,8 +93,8 @@ An array is a data structure that can store many values of  the same data type.
 Example:
 
 ```c
-double prices[5] = {5.0, 10.0, 15.0, 20.0, 25.0}; // we use [x] to turn the variable into an array (x being the optional maximum
-						  // size of the array) and we put all of our values inside {}
+double prices[5] = {5.0, 10.0, 15.0, 20.0, 25.0}; // we use [x] to turn the variable into an array (x being the optional
+						  // maximum size of the array) and we put all of our values inside {}
 
 printf("$%.2lf", prices[0]);                      // -> $5.00
 ```
