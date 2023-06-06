@@ -12,8 +12,8 @@ float c = 3.141592;                              // 4 bytes (32 bits of precisio
 double d = 3.141592653589793;                    // 8 bytes (64 bits of precision) 15 - 16 digits / %lf
 
 
-bool e = true;                                   // 1 byte (true or false) / %d (treated as integers, 1 being true and 0 being
-						 // false)
+bool e = true;                                   // 1 byte (true or false) / %d (treated as integers, 1 being true and 0
+						 // being false)
                                                  // booleans require the <stdbool.h> library to be included
 
 
