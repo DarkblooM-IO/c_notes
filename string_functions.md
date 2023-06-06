@@ -28,8 +28,8 @@ strrev(str1);           // reverses a string
 
 strlen(str1);           // returns the length of a string as an int
 			// -> 5
-strcmp(str1, str2);     // returns 0 if two strings are equal, else returns a positive or negative value depending on the
-			// first non-matching characters in both strings
+strcmp(str1, str2);     // returns 0 if two strings are equal, else returns a positive or negative
+			// value depending on the first non-matching characters in both strings
 			// -> -15
 strncmp(str1, str2, 1); // same as strcmp but with a substring of length n
 			// -> -15
