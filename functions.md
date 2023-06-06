@@ -51,7 +51,7 @@ Example:
 ```c
 double square(double x) { // this function expects to return a double
 	double result = x * x;
-	return result; // returning a double as expected by the function type indicated earlier
+	return result;    // returning a double as expected by the function type indicated earlier
 }
 
 int main() {
@@ -74,7 +74,7 @@ int findMax(int x, int y) {
 
 int main() {
 	int max = findMax(3, 4);
-	printf("%d", max); // -> 4
+	printf("%d", max);      // -> 4
 }
 ```
 
@@ -85,13 +85,13 @@ Prototyping a function is essentially declaring it without a body before `main()
 Example:
 
 ```c
-void hello(char name, int age); // function prototype
+void hello(char name, int age);    // function prototype
 
 int main() {
 	char name[] = "DarkblooM";
 	int age = 20;
-	hello(name, age); // -> Hello DarkblooM
-			  //    You are 20 years old
+	hello(name, age);          // -> Hello DarkblooM
+			           //    You are 20 years old
 	return 0;
 }
 
