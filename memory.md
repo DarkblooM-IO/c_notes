@@ -53,7 +53,7 @@ Pointers can be passed as arguments to functions:
 
 ```c
 void printAge(int *pAge) {                       // take note of the *
-	printf("You are %d years old\n", *pAge); // dereference
+	printf("You are %d years old\n", *pAge); // dereference: taking the value from the address stored in pAge
 }
 
 int main() {
