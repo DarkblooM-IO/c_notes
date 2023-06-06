@@ -9,18 +9,19 @@ A `for` loop repeats a section of code a limited amount of times.
 Example:
 
 ```c
-// we declare a variable i and set it to 1, the loop will then continue as long as the condition in the middle is true, in this case i <= 10, and the statement at the end will be executed at the end of each loop, in this case incrementing i by 1
+// we declare a variable i and set it to 1, the loop will then continue as long as the condition in the middle is true, in
+// this case i <= 10, and the statement at the end will be executed at the end of each loop, in this case incrementing i by 1
 for (int i = 1; i <= 10; i++) {
 	printf("loop %d\n", i); // -> loop 1
-							// -> loop 2
-							// -> loop 3
-							// -> loop 4
-							// -> loop 5
-							// -> loop 6
-							// -> loop 7
-							// -> loop 8
-							// -> loop 9
-							// -> loop 10
+				// -> loop 2
+				// -> loop 3
+				// -> loop 4
+				// -> loop 5
+				// -> loop 6
+				// -> loop 7
+				// -> loop 8
+				// -> loop 9
+				// -> loop 10
 }
 ```
 
@@ -39,8 +40,7 @@ printf("What is your name? ");
 fgets(name, 25, stdin);
 name[strlen(name) - 1] = '\0';
 
-while (strlen(name) == 0) { // the loop will continue as long as the user hasn't given
-							// an answer
+while (strlen(name) == 0) { // the loop will continue as long as the user hasn't given an answer
 	printf("You did not enter your name.\n");
 	printf("What is your name? ");
 	fgets(name, 25, stdin);
@@ -64,8 +64,7 @@ do {
 	if (n > 0) {
 		sum += n;
 	}
-} while (n > 0); // the code above will run once, then check the condition and continue
-				 // running if it is true
+} while (n > 0); // the code above will run once, then check the condition and continue running if it is true
 ```
 
 ## `break` and `continue`
@@ -77,45 +76,45 @@ Example:
 
 ```c
 for (int i = 1; i <= 20; i++) {
-	if (i == 13) { // skip this iteration if i == 13
+	if (i == 13) { 	   // skip this iteration if i == 13
 		continue;
 	}
 	printf("%d\n", i); // -> 1
-					   // -> 2
-					   // -> 3
-					   // -> 4
-					   // -> 5
-					   // -> 6
-					   // -> 7
-					   // -> 8
-					   // -> 9
-					   // -> 10
-					   // -> 11
-					   // -> 12
-					   // -> 14
-					   // -> 15
-					   // -> 16
-					   // -> 17
-					   // -> 18
-					   // -> 19
-					   // -> 20
+			   // -> 2
+			   // -> 3
+			   // -> 4
+			   // -> 5
+			   // -> 6
+			   // -> 7
+			   // -> 8
+			   // -> 9
+			   // -> 10
+			   // -> 11
+			   // -> 12
+			   // -> 14
+			   // -> 15
+			   // -> 16
+			   // -> 17
+			   // -> 18
+			   // -> 19
+			   // -> 20
 }
 
 for (int i = 1; i <= 20; i++) {
-	if (i == 13) { // exit the loop if i == 13
+	if (i == 13) { 	   // exit the loop if i == 13
 		break;
 	}
 	printf("%d\n", i); // -> 1
-					   // -> 2
-					   // -> 3
-					   // -> 4
-					   // -> 5
-					   // -> 6
-					   // -> 7
-					   // -> 8
-					   // -> 9
-					   // -> 10
-					   // -> 11
-					   // -> 12
+			   // -> 2
+			   // -> 3
+			   // -> 4
+			   // -> 5
+			   // -> 6
+			   // -> 7
+			   // -> 8
+			   // -> 9
+			   // -> 10
+			   // -> 11
+			   // -> 12
 }
 ```
