@@ -5,21 +5,16 @@ Different data types can be attributed to variables:
 ```c
 char a = 'C';                                    // single character / %c
 char b[x] = "DarkblooM";                         // string of characters / %s
-                                                 // x is the max size of the array in
-                                                 // bytes
+                                                 // x is the max size of the array in bytes
 
 
-float c = 3.141592;                              // 4 bytes (32 bits of precision) 6 - 7
-                                                 // digits / %f
-double d = 3.141592653589793;                    // 8 bytes (64 bits of precision) 15 -
-												 // 16 digits / %lf
+float c = 3.141592;                              // 4 bytes (32 bits of precision) 6 - 7 digits / %f
+double d = 3.141592653589793;                    // 8 bytes (64 bits of precision) 15 - 16 digits / %lf
 
 
-bool e = true;                                   // 1 byte (true or false) / %d
-												 // (treated as integers, 1 being true
-												 // and 0 being false)
-                                                 // Booleans require the <stdbool.h>
-                                                 // library to be included
+bool e = true;                                   // 1 byte (true or false) / %d (treated as integers, 1 being true and 0 being
+						 // false)
+                                                 // booleans require the <stdbool.h> library to be included
 
 
 char f = 100;                                    // 1 byte (-128 to +127) / %d or %c
@@ -30,15 +25,12 @@ short h = 32767;                                 // 2 bytes (-32,768 to +32,767)
 unsigned short i = 65535;                        // 2 bytes (0 to +65,535) / %d
 
 
-int j = 2147483647;                              // 4 bytes (-2,147,483,648 to
-                                                 // +2,147,483,647) / %d
+int j = 2147483647;                              // 4 bytes (-2,147,483,648 to +2,147,483,647) / %d
 unsigned int k = 4294967295;                     // 4 bytes (0 to +4,294,967,295) / %u
 
 
-long long int l = 9223372036854775807;           // 8 bytes (-9 quintillion to
-                                                 // +9 quintillions) / %lld
-unsigned long long int m = 18446744073709551615; // 8 bytes (0 to +18 quintillions) /
-												 // %llu
+long long int l = 9223372036854775807;           // 8 bytes (-9 quintillion to +9 quintillions) / %lld
+unsigned long long int m = 18446744073709551615; // 8 bytes (0 to +18 quintillions) / %llu
 ```
 
 Data types formatting:
@@ -79,6 +71,21 @@ printf("%llu\n", m);    // -> 18446744073709551615
                         //    -> add U to end of value at var initialization
 ```
 
+## Format specifiers
+
+**Format specifier** (%): defines and formats a type of data to be displayed.
+
+Examples:
+```c
+float item = 5.75;
+
+printf("Item 1: $%f\n", item);    // -> Item 1: $5.750000
+printf("Item 1: $%.2f\n", item);  // -> Item 1: $5.75
+printf("Item 1: $%8.2f\n", item); // -> Item 1:        $5.75
+                                  // this is alligned right, to allign left, replace 8 with -8
+
+```
+
 ## Arrays
 
 An array is a data structure that can store many values of  the same data type.
@@ -86,13 +93,10 @@ An array is a data structure that can store many values of  the same data type.
 Example:
 
 ```c
-double prices[5] = {5.0, 10.0, 15.0, 20.0, 25.0}; // we use [x] to turn the variable
-												  // into an array (x being the
-												  // optional maximum size of the
-												  // array) and we put all of our
-												  // values inside {}
+double prices[5] = {5.0, 10.0, 15.0, 20.0, 25.0}; // we use [x] to turn the variable into an array (x being the optional maximum
+						  // size of the array) and we put all of our values inside {}
 
-printf("$%.2lf", prices[0]);                        // -> $5.00
+printf("$%.2lf", prices[0]);                      // -> $5.00
 ```
 
 Note: a string is essentially an array of characters.
@@ -107,15 +111,14 @@ A two-dimensional array is an array in which each value is itself an array.
 Example:
 
 ```c
-int n[2][3] = {{1, 2, 3}, {4, 5, 6}}; // we specify an array of arrays with [x][y] (y
-									  // being mandatory this time and defining the size
-									  // of each sub-arrays)
+int n[2][3] = {{1, 2, 3}, {4, 5, 6}}; // we specify an array of arrays with [x][y] (y being mandatory this time and defining the
+				      // size of each sub-arrays)
 
 // an easier way to visualize a 2D array is declaring it like this:
 int n[2][3] = {
-				{1, 2, 3},
-				{4, 5, 6}
-			  };
+		{1, 2, 3},
+		{4, 5, 6}
+	      };
 
 // you can also declare the array first and then assign values to it individually
 int n[2][3];
@@ -156,8 +159,7 @@ int main() {
 	struct Player player1;
 	struct Player player2;
 
-	strcpy(player1.name, "DarkblooM"); // access a member's value by using the struct
-									   // name followed by a dot then its own name
+	strcpy(player1.name, "DarkblooM"); // access a member's value by using the struct name followed by a dot then its own name
 	player1.score = 4;
 
 	strcpy(player2.name, "BrightblooM");
