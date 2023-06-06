@@ -159,7 +159,8 @@ int main() {
 	struct Player player1;
 	struct Player player2;
 
-	strcpy(player1.name, "DarkblooM"); // access a member's value by using the struct name followed by a dot then its own name
+	strcpy(player1.name, "DarkblooM"); // access a member's value by using the struct name followed by a dot then its
+					   // own name
 	player1.score = 4;
 
 	strcpy(player2.name, "BrightblooM");
