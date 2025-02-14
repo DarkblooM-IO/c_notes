@@ -13,8 +13,8 @@ int main() {
     fgets(name, 25, stdin);                 // variable to assign, max input size, input stream
     name[strlen(name)-1] = '\0';            // get rid of the trailing newline character
     printf("How old are you? ");
-    scanf("%d", &age);                      // use the scanf function to ask the user for an input, using format specifiers
-                                            // to specify the type of data we want
+    scanf("%d", &age);                      // use the scanf function to ask the user for an input,
+                                            // using format specifiers to specify the type of data we want
 
     printf("Your name is %s.\n", name);
     printf("You are %d years old.\n", age); // print out the input embeded in a string
